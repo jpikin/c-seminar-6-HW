@@ -4,6 +4,19 @@
 // 1, -7, 567, 89, 223-> 3
 
 
+int M = new Random().Next(1,9);
+Console.WriteLine($"Введите {M} чисел");
+int count = 0;
+int[] arr = new int[M];
+for (int i = 1; i <= M; i++)
+{
+    int temp = new Random().Next(-100, 101);
+    if (temp > 0) count++;
+    arr[i-1] = temp;
+}
+Console.WriteLine($"Вы ввели числа: {String.Join(" ,", arr)}");
+Console.WriteLine($"Количество введенных чисел больше ноля - {count}");
+
 // Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, 
 // заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
