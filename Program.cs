@@ -9,12 +9,12 @@ int count = 0;
 int[] arr = new int[M];
 for (int i = 1; i <= M; i++)
 {
-    int temp = new Random().Next(-100, 101);
+    int temp = int.Parse(Console.ReadLine());
     if (temp > 0) count++;
     arr[i-1] = temp;
 }
 Console.WriteLine($"Вы ввели числа: {String.Join(" ,", arr)}");
-Console.WriteLine($"Количество введенных чисел больше ноля - {count}");
+Console.WriteLine($"Количество введенных чисел больше ноля: {count}");
 
 
 // Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, 
