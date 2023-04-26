@@ -26,29 +26,29 @@
 // Точка пересечения (x, y) = ((b1× c2 − b2× c1)/(a1×b2 − a2×b1), (c1×a2 − c2×a1)/(a1×b2 − a2×b1))
 
 
-Console.WriteLine("Введите точку b1");
-double b1 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите точку k1");
-double k1 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите точку b2");
-double b2 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите точку k2");
-double k2 = Convert.ToDouble(Console.ReadLine());
-double x = -1000;
-bool flag = false;
-for (double i = -999.9; i < 999.9; i = i + 0.1)
-{
-    if (k1 * Math.Round(i,2) + b1 != k2 * Math.Round(i,2) + b2)
-    {
-        continue;
-    }
-    else
-    {
-        x = Math.Round(i,2);
-        flag = true;
-        break;
-    }     
-}
-double y = Math.Round(k1 * x + b1, 2);
-if (flag) Console.WriteLine($"Точка пересечения двух прямых ({x};{y})");
-else Console.WriteLine("Прямые параллельны");
+// Console.WriteLine("Введите точку b1");
+// double b1 = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите точку k1");
+// double k1 = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите точку b2");
+// double b2 = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine("Введите точку k2");
+// double k2 = Convert.ToDouble(Console.ReadLine());
+// double x = -1000;
+// bool flag = false;
+// for (double i = -999.9; i < 999.9; i = i + 0.1)
+// {
+//     if (k1 * Math.Round(i,2) + b1 != k2 * Math.Round(i,2) + b2)
+//     {
+//         continue;
+//     }
+//     else
+//     {
+//         x = Math.Round(i,2);
+//         flag = true;
+//         break;
+//     }     
+// }
+// double y = Math.Round(k1 * x + b1, 2);
+// if (flag) Console.WriteLine($"Точка пересечения двух прямых ({x};{y})");
+// else Console.WriteLine("Прямые параллельны");
